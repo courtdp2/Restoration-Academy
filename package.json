@@ -19,5 +19,19 @@
   "bugs": {
     "url": "https://github.com/courtdp2/Restoration-Academy/issues"
   },
-  "homepage": "https://github.com/courtdp2/Restoration-Academy#readme"
+  "homepage": "https://github.com/courtdp2/Restoration-Academy#readme",
+  "dependencies": {
+    "@types/body-parser": "^1.16.7",
+    "@types/express": "^4.0.39",
+    "@types/mysql": "^2.15.0",
+    "@types/node": "^8.0.47",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mysql": "^2.15.0",
+    "node": "^8.3.0",
+    "typescript": "^2.5.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
 }
