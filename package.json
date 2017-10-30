@@ -1,0 +1,23 @@
+{
+  "name": "restoration-academy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "source variables && npm run dev",
+    "build:ts": "tsc -p .",
+    "server": "node server/index.js",
+    "dev": "nodemon -e ts --dir server/ --exec \"npm run build:ts && npm run server\"",
+    "start": "npm run build:ts && npm run server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/courtdp2/Restoration-Academy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/courtdp2/Restoration-Academy/issues"
+  },
+  "homepage": "https://github.com/courtdp2/Restoration-Academy#readme"
+}
