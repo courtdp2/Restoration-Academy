@@ -8,6 +8,8 @@ export let pool = mysql.createPool({
     database: process.env.DATABASE_NAME
 });
 
+exports.pool = pool;
+
 function callProcedure(procedureName: string, args: Array<any> = []): Promise<Array<Array<any>>> {
     return new Promise(function(resolve, reject) {
         pool.getConnection(function(err, connection) {

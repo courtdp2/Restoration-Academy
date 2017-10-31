@@ -3,6 +3,7 @@ import * as express from 'express';
 import { json } from 'body-parser';
 import apiRouter from './api';
 import stateRouting from './middleware/routing.mw';
+import configurePassport from './config/passport';
 
 const clientPath = join(__dirname, '../client');
 const app = express();
