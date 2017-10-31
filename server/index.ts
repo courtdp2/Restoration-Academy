@@ -1,8 +1,8 @@
 import { join } from 'path';
 import * as express from 'express';
 import { json } from 'body-parser';
-// import apiRouter from './api';
-// import stateRouting from './middleware/routing.mw';
+import apiRouter from './api';
+import stateRouting from './middleware/routing.mw';
 
 const clientPath = join(__dirname, '../client');
 const app = express();

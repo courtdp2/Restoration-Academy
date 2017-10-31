@@ -24,7 +24,7 @@ function callProcedure(procedureName: string, args: Array<any> = []): Promise<Ar
                         }
                     }
                 }
-                let callString = 'CALL ' + procedureName + '(' + placeholders + ');'; // CALL GetChirps();, or CALL InsertChirp(?,?,?);
+                let callString = 'CALL ' + procedureName + '(' + placeholders + ');'; 
                 connection.query(callString, args, function(err, resultsets) {
                     connection.release();
                     if (err) {
