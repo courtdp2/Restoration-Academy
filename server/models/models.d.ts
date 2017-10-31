@@ -1,33 +1,25 @@
-declare namespace models {
-    // Dont' have to create ICreateResponse
-    interface ICreateResponse {
-        id: number;
-    }
 
-    interface ICategory {
+declare namespace models {
+    interface IAdministration {
         id: number;
         name: string;
-    }
-
-    interface IPost {
-        id: number;
-        categoryid: number;
-        userid: number;
-        content: string;
-        createdAt: Date;
-        title: string;
-
-        authorfirstname?: string;
-        authorlastname?: string;
-        categoryname?: string;
-    }
-
-    interface IUser {
-        id: number;
-        email: string;
-        firstname: string;
-        lastname: string;
         password: string;
         role: string;
+        title: string;
+        imageUrl: string
+    }
+
+    interface ITeacher {
+        id: number;
+        name: string;
+        course: string;
+        school: string;
+        imageUrl: string;
+    }
+
+    interface IBoard {
+        id: number;
+        name: string;
+        title: string;
     }
 }
