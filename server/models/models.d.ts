@@ -13,7 +13,6 @@ declare namespace models {
         id: number;
         name: string;
         course: string;
-        school: string;
         imageUrl: string;
     }
 
