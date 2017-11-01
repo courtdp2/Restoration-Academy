@@ -8,7 +8,7 @@ const router = Router();
 
 router
     .use('/admin', adminsController)
-    .use('/staff', staffController)
+    .use('/about', staffController)
 
 
 
