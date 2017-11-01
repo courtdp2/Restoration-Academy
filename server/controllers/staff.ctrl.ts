@@ -1,26 +1,26 @@
 import { Router } from 'express';
-import * as procedures from '../procedures/staff.proc'
+import { getTeachers } from '../procedures/staff.proc'
 
 const router = Router();
 
-router.get('/', (req, res) => {
-    procedures.ElementaryTeachers('elementary')
-    .then((teachers) => {
-        res.send(teachers)
-    }).catch((err) =>{
-        console.log(err)
-        res.sendStatus(500);
-    })
-   
-}) 
-router.get('/', (req, res) => {
-  procedures.JrAndHighschoolTeachers('Junior and High School')
-    .then((teachers) => {
-        res.send(teachers)
-    }).catch((err) => {
-        console.log(err)
-        res.sendStatus(500);
-    })  
+router.get('/elementary', (req, res) => {
+    getTeachers('elementary')
+        .then((teachers) => {
+            res.send(teachers)
+        }).catch((err) => {
+            console.log(err)
+            res.sendStatus(500);
+        })
+
+})
+router.get('/highschool', (req, res) => {
+    getTeachers('junior and high school')
+        .then((teachers) => {
+            res.send(teachers)
+        }).catch((err) => {
+            console.log(err)
+            res.sendStatus(500);
+        })
 })
 
 
