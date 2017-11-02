@@ -16,17 +16,17 @@ let app = angular.module('RA',[
         templateUrl: 'views/about.html',
         controller: 'AboutController'
     })
-    .when('/programs', {
-        templateUrl: 'views/programs.html',
-        controller: 'ProgramsController'
+    .when('/academics', {
+        templateUrl: 'views/academics.html',
+        controller: 'AcademicsController'
     })
-    .when('/apply', {
-        templateUrl: 'views/apply.html',
-        controller: 'ApplyController'
+    .when('/studentlife', {
+        templateUrl: 'views/studentlife.html',
+        controller: 'StudentlifeController'
     })
-    .when('/contact', {
-        templateUrl: 'views/conctact.html',
-        controller: 'ContactController'
+    .when('/newsandevents', {
+        templateUrl: 'views/newsandevents.html',
+        controller: 'NewsandeventsController'
     })
     .when('/getinvolved', {
         templateUrl: 'views/getinvolved.html',
