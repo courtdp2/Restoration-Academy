@@ -69,4 +69,15 @@ router.post('/',(req, res) => {
         res.sendStatus(500);
     });
 });
+
+router.delete('/:id', (req, res) => {
+    procedures.destroy(req.params.id)
+    .then(() =>{
+        res.sendStatus(204);
+    }).catch((err) => {
+        console.log(err);
+        res.sendStatus(500);
+    });
+});
+
 export default router;
