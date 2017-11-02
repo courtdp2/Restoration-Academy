@@ -1,5 +1,13 @@
 angular.module('RA.controllers', [])
 
+.controller('admins', ['$scope', 'Administrator', '$routeParams', function ($scope, Administrator, $routeParams) {
+    function getAdmins() {
+        $scope.Administrators = Administrator.query({ id: '@id' });
+        console.log($scope.Administrators);
+    };
+    getAdmins();
+}])
+
 .controller('ContactController', ['$scope', 'ContactForm', function ($scope, ContactForm) {
     $scope.send = function () {
         let contact = new ContactForm({

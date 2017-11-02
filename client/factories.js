@@ -12,4 +12,7 @@ angular.module('RA.factories', [])
 // }])
 // .factory('Payment', ['$resource', function($resource) {
 //     return $resource('api/payment/:id', {id: '@id'})
+}])
+.factory('Admin', ['$resource', function($resource){
+    return $resource ('api/about#collaspeOne')
 }]);
