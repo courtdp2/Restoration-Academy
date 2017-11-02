@@ -16,23 +16,16 @@ body {
 
 /* HOMEPAGE */
 
-
-/* Carousel base class */
-
 .carousel {
   margin-bottom: 4rem;
 }
 
 
-/* Since positioning the image, we need to help out the caption */
-
 .carousel-caption {
   bottom: 3rem;
   z-index: 10;
+  background: #000000;
 }
-
-
-/* Declare heights because of positioning of img element */
 
 .carousel-item {
   height: 32rem;
@@ -42,8 +35,8 @@ body {
 .carousel-item>img {
   position: absolute;
   top: 0;
-  left: 0;
-  min-width: 100%;
+  left: 13%;
+  min-width: 75%;
   height: 32rem;
 }
 
