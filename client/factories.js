@@ -13,9 +13,6 @@ angular.module('RA.factories', [])
 // .factory('Payment', ['$resource', function($resource) {
 //     return $resource('api/payment/:id', {id: '@id'})
 }])
-.factory('Admins', ['$resource', function($resource){
-    return $resource ('api//admins', {id: '@id'})
-}])
 .factory('Elementary', ['$resource', function($resource){
     return $resource ('api/about/elementaryteachers', {id: '@id'})
 }])
@@ -24,4 +21,7 @@ angular.module('RA.factories', [])
 }])
 .factory('Board', ['$resource', function($resource){
     return $resource ('api/about/board-of-directors', {id: '@id'})
+}])
+.factory('Admins', ['$resource', function($resource){
+    return $resource ('api/admins', {id: '@id'})
 }])

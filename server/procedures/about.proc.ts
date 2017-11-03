@@ -8,3 +8,6 @@ export function getBoard(): Promise<Array<models.IBoard>> {
     return rows ('GetBoard');
 }
 
+export function getAdmins(): Promise<Array<models.IAdministration>> {
+    return rows ('GetAdmins');
+}
