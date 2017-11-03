@@ -204,41 +204,61 @@ body {
 
  /* FOOTER */
 
- body{
-  font-family:Roboto;
-}
-.search-text{
+
+.footer{
 margin-top:50px;
 background-color: rgb(37, 34, 34);
 padding-top:60px;
 padding-bottom:60px;
 }
 
-.search-text .input-search{
+.footer .input-search{
 height:45px;
 width:40%;
 padding-left:20px;
 } 
 
-.search-text .btn-search{
+.btn-search{
   background: tan;
-  font-family:Roboto;
   border:none;
-color:#FFF;
-height: 45px;
+  color:#FFF;
+  height: 45px;
   width: 80px;
+  /* font-family: futura-pt, sans-serif;
+  font-style: normal;
+  font-weight: 400; */
 }
 
-.search-text h4{
-  color: #FFF;
-  font-weight: 700;
+.footer p{
+  color: #FFF; 
+  font-weight: 800; 
+  /* border-bottom: 1px solid #c7c7c7;  */
+  padding-bottom: 10px; 
+  margin-bottom: 20px;
+  display: block;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 3px;
+ 
 }
 
+.connect p2{
+  color: #FFF; 
+  font-weight: 800; 
+  /* border-bottom: 1px solid #c7c7c7;  */
+  padding-bottom: 10px; 
+  margin-bottom: 20px;
+  display: block;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 3px;
+ 
+}
 
-.address span , .menu span{
+.connect span {
  color: #FFF; 
  font-weight: 800; 
- border-bottom: 1px solid #c7c7c7; 
+ /* border-bottom: 1px solid #c7c7c7;  */
  padding-bottom: 10px; 
  margin-bottom: 20px;
  display: block;
@@ -247,19 +267,19 @@ height: 45px;
  letter-spacing: 3px;
 }
 
-.address li a , .menu li a{
+.connect li a {
   color:#FFF;
   letter-spacing: 3px;
   text-decoration:none;
   font-size:12px;
 }
 
-.address li, .menu li{
+.schoolcontact li, .social li{
   margin-top: 5px;
   list-style: none;
 }
 
-.address li a:hover{
+.schoolcontact li a:hover{
   color: #2525F8;
   -webkit-transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
