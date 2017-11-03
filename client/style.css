@@ -66,12 +66,15 @@ body {
   font-weight: 700;
 }
 
+.smallCaps {
+  font-variant: small-caps;
+}
+
 /* HOMEPAGE */
 
 .carousel {
   margin-bottom: 4rem;
 }
-
 
 .carousel-caption {
   bottom: 3rem;
@@ -91,7 +94,6 @@ body {
   min-width: 75%;
   height: 32rem;
 }
-
 
 /* Center align the text within the three columns below the carousel */
 
