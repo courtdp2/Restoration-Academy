@@ -13,6 +13,58 @@ body {
   padding-top: 3rem;
 }
 
+/* FONTS */
+
+/* MAIN FONT (Futura) */
+.normalFont {
+  font-family: futura-pt, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.italicFont {
+  font-family: futura-pt, sans-serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.boldFont {
+  font-family: futura-pt, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.boldItalicFont {
+  font-family: futura-pt, sans-serif;
+  font-style: italic;
+  font-weight: 700;
+}
+
+/* SECONDARY FONT (Bodoni) */
+.altNormal {
+  font-family: bodoni-urw, serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+
+.altItalic {
+  font-family: bodoni-urw, serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.altBold {
+  font-family: bodoni-urw, serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.altBoldItalic {
+  font-family: bodoni-urw, serif;
+  font-style: italic;
+  font-weight: 700;
+}
 
 /* HOMEPAGE */
 
