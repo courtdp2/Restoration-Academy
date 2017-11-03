@@ -2,7 +2,7 @@ angular.module('RA.directives', [])
 .directive('mainNavigation', [function() {
     return {
         templateUrl: 'directives/navbar.html',
-        controller: 'navController',
+        // controller: 'navController',
         restrict: 'E',
         scope: {
             activePage: '='
