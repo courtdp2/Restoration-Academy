@@ -201,3 +201,141 @@ body {
   /* height: 15em; */
   width: 50%;
 }
+
+ /* FOOTER */
+
+ body{
+  font-family:Roboto;
+}
+.search-text{
+margin-top:50px;
+background-color: rgb(37, 34, 34);
+padding-top:60px;
+padding-bottom:60px;
+}
+
+.search-text .input-search{
+height:45px;
+width:40%;
+padding-left:20px;
+} 
+
+.search-text .btn-search{
+  background: tan;
+  font-family:Roboto;
+  border:none;
+color:#FFF;
+height: 45px;
+  width: 80px;
+}
+
+.search-text h4{
+  color: #FFF;
+  font-weight: 700;
+}
+
+
+.address span , .menu span{
+ color: #FFF; 
+ font-weight: 800; 
+ border-bottom: 1px solid #c7c7c7; 
+ padding-bottom: 10px; 
+ margin-bottom: 20px;
+ display: block;
+ text-transform: uppercase;
+ font-size: 16px;
+ letter-spacing: 3px;
+}
+
+.address li a , .menu li a{
+  color:#FFF;
+  letter-spacing: 3px;
+  text-decoration:none;
+  font-size:12px;
+}
+
+.address li, .menu li{
+  margin-top: 5px;
+  list-style: none;
+}
+
+.address li a:hover{
+  color: #2525F8;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.fa{
+  color: tan;
+  margin-right: 10px;
+  font-size:14px;
+}
+
+@import "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css";
+
+.social {
+    margin: 0;
+    padding: 0;
+}
+
+.social ul {
+    margin: 0;
+    padding: 5px;
+}
+
+.social ul li {
+    margin: 5px;
+    list-style: none outside none;
+    display: inline-block;
+}
+
+.social i {
+    width: 40px;
+    height: 40px;
+    color: #FFF;
+    background-color: #909AA0;
+    font-size: 22px;
+    text-align:center;
+    padding-top: 12px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+}
+
+.social i:hover {
+    color: #FFF;
+    text-decoration: none;
+    transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+}
+
+.social .fa-facebook:hover {
+    background: #4060A5;
+}
+
+.social .fa-twitter:hover {
+    background: #00ABE3;
+}
+
+.social .fa-instagram:hover {
+    background: #375989;
+}
+
+.social .fa-vimeo-square:hover {
+    background: #83DAEB;
+}
+
+.social .fa-rss:hover {
+    background: #e88845;
+}
