@@ -185,3 +185,17 @@ body {
 body {
   position: relative;
 }
+
+.elementaryimages {
+  /* height: 15em; */
+  width: 50%;
+}
+.highschoolimages {
+  /* height: 15em; */
+  width: 50%;
+}
+
+.administrationimages {
+  /* height: 15em; */
+  width: 50%;
+}

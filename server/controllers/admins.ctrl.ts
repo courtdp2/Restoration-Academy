@@ -5,6 +5,15 @@ import * as utils from '../utils';
 import * as auth from '../middleware/auth.mw'
 
 const router = Router();
+router.get('/', (req, res) => {
+    return procedures.all()
+    .then((admins) => {
+        res.send(admins)
+    }).catch((err) => {
+        console.log(err)
+        res.sendStatus(500);
+    })
+})
 
 
 // router.post('/login', (req, res, next) => {
@@ -69,6 +78,8 @@ router.post('/',(req, res) => {
         res.sendStatus(500);
     });
 });
+
+
 
 router.delete('/:id', (req, res) => {
     procedures.destroy(req.params.id)

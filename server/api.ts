@@ -7,7 +7,7 @@ import aboutController from './controllers/about.ctrl'
 const router = Router();
 
 router
-    .use('/admin', adminsController)
+    .use('/admins', adminsController)
     .use('/about', aboutController)
 
 
