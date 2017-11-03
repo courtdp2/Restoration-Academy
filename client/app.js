@@ -1,7 +1,7 @@
-let app = angular.module('RA',[
+angular.module('RA',[
     'ngRoute',
     'ngResource',
-    // ,'RA.Factory',
+    'RA.factories',
     'RA.controllers',
     // 'RA.services',
     'RA.directives'
@@ -14,7 +14,7 @@ let app = angular.module('RA',[
     })
     .when('/about', {
         templateUrl: 'views/about.html',
-        controller: 'admins'
+        controller: 'About'
     })
     .when('/academics', {
         templateUrl: 'views/academics.html',

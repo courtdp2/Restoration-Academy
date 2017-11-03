@@ -13,6 +13,12 @@ angular.module('RA.factories', [])
 // .factory('Payment', ['$resource', function($resource) {
 //     return $resource('api/payment/:id', {id: '@id'})
 }])
-.factory('Admin', ['$resource', function($resource){
-    return $resource ('api/about#collaspeOne')
-}]);
+.factory('Elementary', ['$resource', function($resource){
+    return $resource ('api/about/elementaryteachers', {id: '@id'})
+}])
+.factory('Highschool', ['$resource', function($resource){
+    return $resource ('api/about/highschoolteachers', {id: '@id'})
+}])
+.factory('Board', ['$resource', function($resource){
+    return $resource ('api/about/board-of-directors', {id: '@id'})
+}])
