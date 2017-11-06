@@ -18,7 +18,7 @@ angular.module('RA.services', [])
     this.login = function(email, password) {
         return $http({
             method: 'POST',
-            url: '/api/users/login',
+            url: '/api/admins/login',
             data: {
                 email: email,
                 password: password
@@ -32,7 +32,7 @@ angular.module('RA.services', [])
     this.logout = function() {
         return $http({
             method: 'GET',
-            url: '/api/users/logout'
+            url: '/api/admins/adminview'
         }).then(() => {
             currentUser = undefined;
         });
@@ -44,7 +44,7 @@ angular.module('RA.services', [])
         } else {
             return $http({
                 method: 'GET',
-                url: '/api/users/me'
+                url: '/api/admin/login'
             }).then((response) => {
                 currentUser = response.data;
                 return currentUser;

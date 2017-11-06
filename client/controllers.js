@@ -65,6 +65,7 @@ $scope.boardMembers = Board.query();
     UserService.logout()
     .then(() => {
         $location.replace().path('/');
+
     });
 }]);
 

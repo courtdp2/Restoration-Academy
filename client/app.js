@@ -36,6 +36,10 @@ angular.module('RA',[
         templateUrl: 'views/login.html',
         controller: 'LoginController'
     })
+    // .when('/logout', {
+    //     templateUrl: 'views/adminview.html',
+    //     controller: 'AdminListController'
+    // })
     .otherwise({
         redirectTo: '/'
     })

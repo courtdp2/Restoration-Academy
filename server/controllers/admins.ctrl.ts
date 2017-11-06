@@ -98,7 +98,7 @@ router.post('/',(req, res) => {
 router.get('/me', (req, res) => {
     res.send(req.user);
 });
-router.get('/logout', (req, res) => { // actually /api/users/logout
+router.get('/login', (req, res) => { // actually /api/users/logout
     if (req.session) {
         req.session.destroy(() => {
             req.logOut();
