@@ -23,5 +23,5 @@ angular.module('RA.factories', [])
     return $resource ('api/about/board-of-directors', {id: '@id'})
 }])
 .factory('Admins', ['$resource', function($resource){
-    return $resource ('api/admins', {id: '@id'})
+    return $resource ('api/admins/list', {id: '@id'})
 }])

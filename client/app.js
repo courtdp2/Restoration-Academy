@@ -3,7 +3,7 @@ angular.module('RA',[
     'ngResource',
     'RA.factories',
     'RA.controllers',
-    // 'RA.services',
+    'RA.services',
     'RA.directives'
 ])
 .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider){
@@ -31,6 +31,10 @@ angular.module('RA',[
     .when('/getinvolved', {
         templateUrl: 'views/getinvolved.html',
         controller: 'GetinvolvedController'
+    })
+    .when('/login', {
+        templateUrl: 'views/login.html',
+        controller: 'LoginController'
     })
     .otherwise({
         redirectTo: '/'

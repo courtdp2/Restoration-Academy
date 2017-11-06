@@ -8,6 +8,7 @@ const router = Router();
 
 router
     .use('/admins', adminsController)
+    // /api/admins
     .use('/about', aboutController)
 
 
