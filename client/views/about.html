@@ -55,72 +55,69 @@
                         Most importantly, we are breaking generational cycles of poverty, violence, addiction and fatherlessness in Fairfield and the greater Birmingham area.
                         </p>
                     <h4 id="list-item-5">Who We Are</h4>
-                    <p><div id="accordion" role="tablist">
-                        <div class="card">
-                          <div class="card-header" role="tab" id="headingOne">
-                            <h5 class="mb-0">
-                              <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Administration
-                              </a>
-                            </h5>
+                      <p><div class="panel-group" id="accordion">
+                      <div class="panel panel-default">
+                          <div class="panel-heading">
+                              <h4 class="panel-title">
+                                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Administration</a>
+                              </h4>
                           </div>
-                      
-                          <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
-                            <div class="card-body">
-                                    <div ng-repeat="admin in admins">
+                          <div id="collapseOne" class="panel-collapse collapse in">
+                              <div class="panel-body row">
+                                  <div class="col-md-4 col-12" ng-repeat="admin in admins">
                                     <img class="adminsimages" ng-src="{{ admin.imageurl }}" alt="">
-                                    <h4>{{ admin.name }}</h4>
+                                    <h4>{{ admin.name }}</h4>                                    
                                     <h6>{{ admin.title }}</h6>
-                                  </div>                          
-                          </div>
-                        </div>
-                        <div class="card">
-                          <div class="card-header" role="tab" id="headingTwo">
-                            <h5 class="mb-0">
-                              <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Teachers
-                              </a>
-                            </h5>
-                          </div>
-                          <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
-                            <div class="card-body">
-                              <div>
-                                <h3>Elementary Teachers</h3>
-                                <div ng-repeat="elementaryteacher in elementaryteachers">
-                                <img class="elementaryimages" ng-src="{{ elementaryteacher.imageurl }}" alt="">
-                                <h4>{{ elementaryteacher.name }}</h4>
-                                <h6>{{ elementaryteacher.course }}</h6>
+                                    <hr>
+                                  </div>     
                               </div>
-                              <hr>
-                              <h3>High School Teachers</h3>
-                              <div ng-repeat="highschoolteacher in highschoolteachers">
-                                <img class="highschoolimages" ng-src="{{ highschoolteacher.imageurl }}" alt="">
-                                <h4>{{ highschoolteacher.name }}</h4>
-                                <h6>{{ highschoolteacher.course }}</h6>
+                          </div>
+                      </div>
+                      <div class="panel panel-default">
+                          <div class="panel-heading">
+                              <h4 class="panel-title">
+                                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Teachers</a>
+                              </h4>
+                          </div>
+                          <div id="collapseTwo" class="panel-collapse collapse">
+                              <div class="panel-body" row>
+                                  <div>
+                                      <h3>Elementary Teachers</h3>
+                                      <div class="col-md-4 col-12" ng-repeat="elementaryteacher in elementaryteachers">
+                                      <img class="elementaryimages" ng-src="{{ elementaryteacher.imageurl }}" alt="">
+                                      <h4>{{ elementaryteacher.name }}</h4>
+                                      <h6>{{ elementaryteacher.course }}</h6>
+                                      <hr>
+                                    </div>
+                                    <hr>
+                                    <h3>High School Teachers</h3>
+                                    <div class="col-md-4 col-12" ng-repeat="highschoolteacher in highschoolteachers">
+                                      <img class="highschoolimages" ng-src="{{ highschoolteacher.imageurl }}" alt="">
+                                      <h4>{{ highschoolteacher.name }}</h4>
+                                      <h6>{{ highschoolteacher.course }}</h6>
+                                    </div>
+      
+                                    </div>
                               </div>
-
+                          </div>
+                      </div>
+                      <div class="panel panel-default">
+                          <div class="panel-heading">
+                              <h4 class="panel-title">
+                                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Board of Directors</a>
+                              </h4>
+                          </div>
+                          <div id="collapseThree" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                  <div>
+                                      <div ng-repeat="boardMember in boardMembers">
+                                      <h4>{{ boardMember.name }}</h4>
+                                      <h6>{{ boardMember.title }}</h6>
+                                    </div>
                               </div>
-                            </div>
                           </div>
-                        </div>
-                        <div class="card">
-                          <div class="card-header" role="tab" id="headingThree">
-                            <h5 class="mb-0">
-                              <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Board of Directors
-                              </a>
-                            </h5>
-                          </div>
-                          <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
-                            <div class="card-body">
-                                <div>
-                                    <div ng-repeat="boardMember in boardMembers">
-                                    <h4>{{ boardMember.name }}</h4>
-                                    <h6>{{ boardMember.title }}</h6>
-                                  </div>
-                            </div>
-                          </div>
-                        </div>
+                      </div>
+                  </div>
                       </div></p>
                     <h4 id="list-item-6">Contact Us</h4>
                     <p><h6><b>Physical Address</b></h6>4600 Canregie Avenue (Elementary School Building)<br>4801 Gary Avenue (High School Building)
