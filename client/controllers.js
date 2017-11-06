@@ -8,20 +8,20 @@ $scope.boardMembers = Board.query();
 
 }])
 
-.controller('ContactController', ['$scope', 'ContactForm', function ($scope, ContactForm) {
-    $scope.send = function () {
-        let contact = new ContactForm({
-            from: $scope.email,
-            message: $scope.message
-        });
+// .controller('ContactController', ['$scope', 'ContactForm', function ($scope, ContactForm) {
+//     $scope.send = function () {
+//         let contact = new ContactForm({
+//             from: $scope.email,
+//             message: $scope.message
+//         });
 
-        contact.$save(function () {
-            alert('Thank you for you message. We will get back with you shortly')
-        }, function (err) {
-            console.log(err);
-        });
-    }
-}])
+//         contact.$save(function () {
+//             alert('Thank you for you message. We will get back with you shortly')
+//         }, function (err) {
+//             console.log(err);
+//         });
+//     }
+// }])
 
 .controller('ProgramController', ['$scope', 'Programs', function ($scope, Programs) {
     let navSelector = '#toc';
@@ -57,14 +57,33 @@ $scope.boardMembers = Board.query();
         });
     }
 }])
-.controller('AdminListController', ['$scope', 'User', function($scope, User) {
-    $scope.admins = Admins.query();
+.controller('ListController', ['$scope', 'Teachers', function($scope, Teachers) {
+    $scope.teachers = Teachers.query();
+}])
+
+.controller('UpdateTeachers', ['$scope', 'Teacher', 'Course', '$location', '$routeParams', function($scope, Teacher, Course, $location, $routeParams) {
+    $scope.teachers = Teachers.query();
+
+    $scope.post = Post.get({ id: $routeParams.id }, function(success) {
+    $scope.update = function() {
+        $scope.post.$update(function() {
+            $location.path('/list' + $routeParams.id + "/update");
+        });
+    }
+ });
+    $scope.delete = function() {
+        if (confirm('Are you sure want to delete?')) {
+            $scope.post.$delete(function() {
+                $location.replace().path('/list');
+            })
+        }
+    }
 }])
 
 .controller('LogoutController', ['UserService', '$location', function( UserService, $location) {
     UserService.logout()
     .then(() => {
-        $location.replace().path('/');
+        $location.replace().path('/login');
 
     });
 }]);

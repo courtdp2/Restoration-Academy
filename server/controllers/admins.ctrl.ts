@@ -8,8 +8,8 @@ const router = Router();
 // /api/admins/list
 router.get('/list', (req, res) => {
     return procedures.all()
-    .then((admins) => {
-        res.send(admins)
+    .then((teachers) => {
+        res.send(teachers)
     }).catch((err) => {
         console.log(err)
         res.sendStatus(500);
@@ -55,7 +55,7 @@ router.post('/login', (req, res, next) => {
     })(req, res, next);
 });
 
-// router.all('*', auth.isLoggedIn);
+router.all('*', auth.isLoggedIn);
 
 router.get('/', (req, res) => {
     procedures.allTeachers()
