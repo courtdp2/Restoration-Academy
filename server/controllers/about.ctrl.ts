@@ -3,6 +3,16 @@ import * as procedures from '../procedures/about.proc'
 
 const router = Router();
 
+router.get('/admins', (req, res) => {
+    return procedures.getAdmins()
+    .then((admins) => {
+        res.send(admins)
+    }).catch((err) => {
+        console.log(err)
+        res.sendStatus(500);
+    })
+})
+
 router.get('/elementaryteachers', (req, res) => {
     procedures.getTeachers('elementary')
         .then((teachers) => {

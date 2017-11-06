@@ -67,8 +67,11 @@
                       
                           <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
                             <div class="card-body">
-
-                            </div>
+                                    <div ng-repeat="admin in admins">
+                                    <img class="adminsimages" ng-src="{{ admin.imageurl }}" alt="">
+                                    <h4>{{ admin.name }}</h4>
+                                    <h6>{{ admin.title }}</h6>
+                                  </div>                          
                           </div>
                         </div>
                         <div class="card">
@@ -85,15 +88,15 @@
                                 <h3>Elementary Teachers</h3>
                                 <div ng-repeat="elementaryteacher in elementaryteachers">
                                 <img class="elementaryimages" ng-src="{{ elementaryteacher.imageurl }}" alt="">
-                                <h2>{{ elementaryteacher.name }}</h2>
-                                <h3>{{ elementaryteacher.course }}</h3>
+                                <h4>{{ elementaryteacher.name }}</h4>
+                                <h6>{{ elementaryteacher.course }}</h6>
                               </div>
                               <hr>
                               <h3>High School Teachers</h3>
                               <div ng-repeat="highschoolteacher in highschoolteachers">
                                 <img class="highschoolimages" ng-src="{{ highschoolteacher.imageurl }}" alt="">
-                                <h2>{{ highschoolteacher.name }}</h2>
-                                <h3>{{ highschoolteacher.course }}</h3>
+                                <h4>{{ highschoolteacher.name }}</h4>
+                                <h6>{{ highschoolteacher.course }}</h6>
                               </div>
 
                               </div>

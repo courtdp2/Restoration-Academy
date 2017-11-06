@@ -1,6 +1,7 @@
 angular.module('RA.controllers', [])
 
-.controller('About', ['$scope', '$routeParams','Elementary', 'Highschool', 'Board', function ($scope, $routeParams, Elementary, Highschool, Board) {
+.controller('About', ['$scope', '$routeParams','Admins', 'Elementary', 'Highschool', 'Board',  function ($scope, $routeParams, Admins, Elementary, Highschool, Board) {
+$scope.admins = Admins.query();
 $scope.elementaryteachers = Elementary.query();
 $scope.highschoolteachers = Highschool.query();
 $scope.boardMembers = Board.query();
