@@ -32,7 +32,7 @@ angular.module('RA.services', [])
     this.logout = function() {
         return $http({
             method: 'GET',
-            url: '/api/admins/adminview'
+            url: '/api/admins/list'
         }).then(() => {
             currentUser = undefined;
         });

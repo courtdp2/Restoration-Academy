@@ -993,3 +993,20 @@ body #footer h3 {
 body #header, body #footer, body #footer h3, body #footer h4 {
 	font-family: 'Lato', sans-serif;
 }
+
+.adminsimages {
+	height: 20em;
+    width:100%;
+}
+
+.elementaryimages {
+	height: 20em;
+	width: 100%;
+}
+
+.highschoolimages{
+	height: 20em;
+	width: 100%;
+}
+
+
