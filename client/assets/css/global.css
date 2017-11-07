@@ -385,14 +385,14 @@ left: 150%;
 }
 /* Effect*/
 .animatedata h2, .animatedata .animation-effect > div, .animatedata .animation-effect > li, .animatedata .animation-effect > span {
-	opacity: 0;
+	opacity: 1;
 }
 .animateleft h2, .animateleft .animation-effect > div, .animateleft .animation-effect > li, .animateleft .animation-effect > span {
-	opacity: 0;
+	opacity: 1;
 	margin-left: 50px;
 }
 .animateright h2, .animateright .animation-effect > div, .animateright .animation-effect > li, .animateright .animation-effect > span {
-	opacity: 0;
+	opacity: 1;
 	margin-left: -50px
 }
 /*
