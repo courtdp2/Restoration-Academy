@@ -1,13 +1,13 @@
-<h1>Staff Directory</h1>
+<h1>Teacher Directory</h1>
 <div>
-        <div>
-          <h2>Teachers</h2>
-                <h3>Elementary Teachers</h3>
-                <div ng-repeat="teacher in teachers">
+  <div class="row">
+  
+               <div class="col-md-4 col-12" ng-repeat="teacher in teachers">
                 <img class="teacherimages" ng-src="{{ teacher.imageurl }}" alt="">
                 <h4>{{ teacher.name }}</h4>
                 <h6>{{ teacher.course }}</h6>
               </div>
+            </div>
               <hr>
 <button ng-click="update()">Update</button>
 <button ng-click="delete()">Delete</button>
