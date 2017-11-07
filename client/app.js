@@ -9,11 +9,6 @@ angular.module('RA',[
 .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider){
     $locationProvider.html5Mode(true);
     $routeProvider
-    // This first route is temporary for testing and will be removed later
-    .when ('/testview', {
-        templateUrl: 'views/testview.html'
-    })
-    
     .when('/', {
         templateUrl: 'views/home.html'
     })
@@ -40,6 +35,11 @@ angular.module('RA',[
     .when('/login', {
         templateUrl: 'views/login.html',
         controller: 'LoginController'
+    })
+
+    .when('/list', {
+        templateUrl: 'views/list.html',
+        controller: 'ListController'
     })
     // .when('/logout', {
     //     templateUrl: 'views/adminview.html',
