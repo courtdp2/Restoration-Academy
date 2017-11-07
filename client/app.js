@@ -36,6 +36,11 @@ angular.module('RA',[
         templateUrl: 'views/login.html',
         controller: 'LoginController'
     })
+
+    .when('/list', {
+        templateUrl: 'views/list.html',
+        controller: 'ListController'
+    })
     // .when('/logout', {
     //     templateUrl: 'views/adminview.html',
     //     controller: 'AdminListController'

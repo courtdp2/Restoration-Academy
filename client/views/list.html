@@ -1,21 +1,14 @@
-<!-- <h1>Staff Directory</h1>
-<h2>Teachers</h2>
-<h3>Administrators</h3>
+<h1>Staff Directory</h1>
 <div>
         <div>
+          <h2>Teachers</h2>
                 <h3>Elementary Teachers</h3>
-                <div ng-repeat="elementaryteacher in elementaryteachers">
-                <img class="elementaryimages" ng-src="{{ elementaryteacher.imageurl }}" alt="">
-                <h4>{{ elementaryteacher.name }}</h4>
-                <h6>{{ elementaryteacher.course }}</h6>
+                <div ng-repeat="teacher in teachers">
+                <img class="teacherimages" ng-src="{{ teacher.imageurl }}" alt="">
+                <h4>{{ teacher.name }}</h4>
+                <h6>{{ teacher.course }}</h6>
               </div>
               <hr>
-              <h3>High School Teachers</h3>
-              <div ng-repeat="highschoolteacher in highschoolteachers">
-                <img class="highschoolimages" ng-src="{{ highschoolteacher.imageurl }}" alt="">
-                <h4>{{ highschoolteacher.name }}</h4>
-                <h6>{{ highschoolteacher.course }}</h6>
-              </div>
 <button ng-click="update()">Update</button>
 <button ng-click="delete()">Delete</button>
-</div> -->
+</div>
