@@ -1,3 +1,4 @@
+
 declare namespace models {
     interface IAdministration {
         id: number;

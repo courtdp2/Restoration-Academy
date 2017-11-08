@@ -35,7 +35,7 @@ export default function configurePassport(app: express.Express) {
         });
     }));
 
-    passport.serializeUser((user: models.IUser, done) => {
+    passport.serializeUser((user: models.IAdministration, done) => {
         done(null, user.id);
     });
 

@@ -1,17 +1,15 @@
-import { rows, row } from '../config/db';
+import { rows, row, empty } from '../config/db';
 
-export function all(): Promise<Array<models.IUser>> {
+export function all(): Promise<Array<models.IAdministration>> {
     return rows('GetAdmins');
 }
 
-export function read(id: number): Promise<models.IUser> {
+
+export function read(id: number): Promise<models.IAdministration> {
     return row('GetAdmin', [id]);
 }
 
-export function readByEmail(email: string): Promise<models.IUser> {
+export function readByEmail(email: string): Promise<models.IAdministration> {
     return row('GetAdminByEmail', [email]);
 }
 
-export function create(email: string, hash: string, firstName: string, lastName: string) {
-    return row('InsertAdmin', [firstName, lastName, email, hash]);
-}
