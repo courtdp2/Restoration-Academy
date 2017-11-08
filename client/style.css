@@ -70,74 +70,47 @@ body {
   font-variant: small-caps;
 }
 
+/* HEADER */
+
+.logo {
+	display: block;
+	float: left;
+	width: 245px;
+}
+.logo {
+	max-width: inherit;
+
 /* HOMEPAGE */
 
-.carousel {
-  margin-bottom: 4rem;
+/*
+ 1.2) mission Info
+ -----------------------------*/
+.homepage-5 .mission-info {
+	padding-bottom: 64px;
+	position: relative;
+	text-align: center;
+	width: 100%;
 }
-
-.carousel-caption {
-  bottom: 3rem;
-  z-index: 10;
-  background: #000000;
+.homepage-5 .mission-info .title {
+	padding: 90px 20px 40px;
+	overflow: hidden;
 }
-
-.carousel-item {
-  height: 32rem;
-  background-color: #777;
+.homepage-5 .mission-info .title p {
+	padding-top: 40px;
+	font-size: 20px;
+	line-height: 1.5;
 }
-
-.carousel-item>img {
-  position: absolute;
-  top: 0;
-  left: 13%;
-  min-width: 75%;
-  height: 32rem;
+.homepage-5 .mission-info .inner {
+	padding:0 0 30px;
+	border-top: 5px solid transparent;
 }
-
-/* Center align the text within the three columns below the carousel */
-
-.marketing .col-lg-4 {
-  margin-bottom: 1.5rem;
-  text-align: center;
+.homepage-5 .mission-info figure {
+	padding-top: 3px;
 }
-
-.marketing h2 {
-  font-weight: 400;
+.homepage-5 .mission-info h3 {
+	padding: 33px 0 20px;
+	letter-spacing: 0.04em;
 }
-
-.marketing .col-lg-4 p {
-  margin-right: .75rem;
-  margin-left: .75rem;
-}
-
-.featurette-divider {
-  margin: 5rem 0;
-}
-
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -.05rem;
-}
-
-@media (min-width: 40em) {
-  .carousel-caption p {
-    margin-bottom: 1.25rem;
-    font-size: 1.25rem;
-    line-height: 1.4;
-  }
-  .featurette-heading {
-    font-size: 50px;
-  }
-}
-
-@media (min-width: 62em) {
-  .featurette-heading {
-    margin-top: 7rem;
-  }
-}
-
 
 /* LOGIN */
 
@@ -217,7 +190,7 @@ padding-bottom:60px;
 height:45px;
 width:40%;
 padding-left:20px;
-} 
+}
 
 .btn-search{
   background: tan;
@@ -231,36 +204,36 @@ padding-left:20px;
 }
 
 .footer p{
-  color: #FFF; 
-  font-weight: 800; 
+  color: #FFF;
+  font-weight: 800;
   /* border-bottom: 1px solid #c7c7c7;  */
-  padding-bottom: 10px; 
+  padding-bottom: 10px;
   margin-bottom: 20px;
   display: block;
   text-transform: uppercase;
   font-size: 16px;
   letter-spacing: 3px;
- 
+
 }
 
 .connect p2{
-  color: #FFF; 
-  font-weight: 800; 
+  color: #FFF;
+  font-weight: 800;
   /* border-bottom: 1px solid #c7c7c7;  */
-  padding-bottom: 10px; 
+  padding-bottom: 10px;
   margin-bottom: 20px;
   display: block;
   text-transform: uppercase;
   font-size: 16px;
   letter-spacing: 3px;
- 
+
 }
 
 .connect span {
- color: #FFF; 
- font-weight: 800; 
+ color: #FFF;
+ font-weight: 800;
  /* border-bottom: 1px solid #c7c7c7;  */
- padding-bottom: 10px; 
+ padding-bottom: 10px;
  margin-bottom: 20px;
  display: block;
  text-transform: uppercase;
@@ -464,4 +437,3 @@ padding-left:20px;
 	margin-right: -15px;
     margin-top: -25px;
 }
-

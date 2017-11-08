@@ -34,7 +34,7 @@ $scope.boardMembers = Board.query();
 
 .controller('LoginController', ['$scope', 'UserService', '$location', function($scope, UserService, $location) {
     UserService.me()
-    .then((me) => {
+    .then((admin) => {
         redirect();
     });
 
@@ -43,7 +43,7 @@ $scope.boardMembers = Board.query();
         // then the variable dest would receive /users as its value
         let dest = $location.search().dest;
         if (!dest) {
-            dest = '/';
+            dest = '/list';
         }
         // e.g. Go to the destination, and then remove the 'dest' search parameter (query parameter)
         // e.g. Remove the ?dest=/users
@@ -52,7 +52,7 @@ $scope.boardMembers = Board.query();
 
     $scope.login = function() {
         UserService.login($scope.email, $scope.password)
-        .then((user) => {
+        .then((admin) => {
             redirect();
         });
     }
