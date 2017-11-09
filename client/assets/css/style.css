@@ -695,9 +695,8 @@ body .top-m, body #slider.top-m {
 	position: relative;
 	width: 100%;
 	overflow: hidden;
-	background: url(https://player.vimeo.com/video/206272920) center center no-repeat;
+	background: url(..\images\strhome.JPG) center center no-repeat;
 	background-attachment: fixed;
-	right: 25%;
 	min-height: 348px;
 }
 .opera .tech-info {
