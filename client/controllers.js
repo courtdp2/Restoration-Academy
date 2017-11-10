@@ -57,14 +57,25 @@ angular.module('RA.controllers', [])
                 });
         }
     }])
-    .controller('ListController', ['$scope', '$location',  'Teachers', function ($scope, $location, Teachers) {
+    .controller('ListController', ['$scope', '$location', 'Teachers', function ($scope, $location, Teachers) {
         $scope.teachers = Teachers.query();
 
-        $scope.update = function (teacher) {
-            $location.path('/list/' + teacher.id + "/update");            
+        $scope.save = function(){
+            let teachers = new Teachers({
+                name: $scope.name,
+                course: $scope.course
+            })
+            teachers.$save(function(){
+                alert('Added');
+                $location.path('/list')
+            })
         }
 
-        $scope.delete = function (teacher) {
+        $scope.update = function (teachers) {
+            $location.path('/list/' + teachers.id + "/update");            
+        }
+
+        $scope.delete = function (teachers) {
             if (confirm('Are you sure want to delete?')) {
                 teacher.$delete(function () {
                     $location.replace().path('/list');
@@ -72,6 +83,18 @@ angular.module('RA.controllers', [])
             }
         }
     }])
+    // .controller('AddTeacherController', ['$scope', 'Teachers', function($scope, Teachers){
+    //     $scope.save = function(){
+    //         let teacher = new Teacher({
+    //             name: $scope.name,
+    //             course: $scope.course
+    //         })
+    //         teacher.$save(function(){
+    //             alert('Added');
+    //             $location.path('/list')
+    //         })
+    //     }
+    // }])
 
 
     // .controller('UpdateTeachers', ['$scope', 'Teacher', 'Course', '$location', '$routeParams', function ($scope, Teacher, Course, $location, $routeParams) {
