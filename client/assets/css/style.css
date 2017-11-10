@@ -616,7 +616,7 @@ body .top-m, body #slider.top-m {
 .help-info {
 	position: relative;
 	width: 100%;
-	background: url(../img/help-info-bg.jpg) center center no-repeat;
+	background: url(..\images\sqhome.jpg) center center no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 	min-height: 585px;
@@ -641,7 +641,7 @@ body .top-m, body #slider.top-m {
 	padding: 50px 0 20px;
 }
 .help-info h2 {
-	color: #fff;
+	color: #000;
 	line-height: 1;
 	margin-bottom: 0;
 }
@@ -673,7 +673,7 @@ body .top-m, body #slider.top-m {
 	color: #94949d;
 }
 .help-info li a {
-	color: #fff;
+	color: #000;
 }
 .pic-block {
 	padding-top: 51%;
@@ -695,7 +695,7 @@ body .top-m, body #slider.top-m {
 	position: relative;
 	width: 100%;
 	overflow: hidden;
-	background: url(../img/tech-info-bg.jpg) center center no-repeat;
+	background: url(..\images\strhome.JPG) center center no-repeat;
 	background-attachment: fixed;
 	min-height: 348px;
 }

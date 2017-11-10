@@ -28,10 +28,10 @@ angular.module('RA',[
         templateUrl: 'views/newsandevents.html',
         controller: 'NewsandeventsController'
     })
-    .when('/getinvolved', {
-        templateUrl: 'views/getinvolved.html',
-        controller: 'GetinvolvedController'
-    })
+    // .when('/getinvolved', {
+    //     templateUrl: 'views/getinvolved.html',
+    //     controller: 'GetinvolvedController'
+    // })
     .when('/login', {
         templateUrl: 'views/login.html',
         controller: 'LoginController'
