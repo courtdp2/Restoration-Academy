@@ -61,11 +61,11 @@ angular.module('RA.controllers', [])
         $scope.teachers = Teachers.query();
 
         $scope.save = function(){
-            let teacher = new Teachers({
+            let teachers = new Teachers({
                 name: $scope.name,
                 course: $scope.course
             })
-            teacher.$save(function(){
+            teachers.$save(function(){
                 alert('Added');
                 $location.path('/list')
             })
