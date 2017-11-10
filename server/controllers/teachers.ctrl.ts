@@ -14,7 +14,7 @@ router.get('/', (req, res) => {
     })
 })
 
-router.post('/',(req, res) => {
+router.post('/:id',(req, res) => {
     return procedures.create(req.body.name, req.body.course, req.body.imageurl)
      .then(function(id){
          res.status(201).send(id);
