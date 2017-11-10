@@ -17,4 +17,13 @@ angular.module('RA.directives', [])
             activePage: '='
         }
     };
+}])
+.directive('emailNewsletter', [function() {
+    return {
+        templateUrl: 'directives/newsletter.html',
+        restrict: 'E',
+        scope: {
+            activePage: '='
+        }
+    };
 }]);
