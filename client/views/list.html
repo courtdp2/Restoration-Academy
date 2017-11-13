@@ -35,14 +35,16 @@
 <div>
   <br>
 
-  <div class="row">
+  <div class="row" >
 
     <div class="col-md-4 col-12" ng-repeat="teacher in teachers">
       <img class="teacherimages" ng-src="{{ teacher.imageurl }}" alt="">
       <h4>{{ teacher.name }}</h4>
       <h6>{{ teacher.course }}</h6>
 
-      <button ng-click="delete(teacher)">Delete</button>
+      <p><button ng-click="delete(teacher)">Delete</button></p>
+      <br>
+      
     </div>
   </div>
   <hr>
