@@ -89,8 +89,13 @@ body {
 	width: 245px;
 }
 .logo {
-	max-width: inherit;
+  max-width: inherit;
+}
 
+.ra-logo {
+  width: 20em;
+  height: 20em;
+}
 /* HOMEPAGE */
 
 /*
@@ -452,4 +457,8 @@ padding-left:20px;
 #phil-detail .close {
 	margin-right: -15px;
     margin-top: -25px;
+}
+
+.caps {
+  text-transform: uppercase;
 }
