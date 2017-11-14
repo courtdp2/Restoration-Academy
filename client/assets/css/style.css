@@ -6917,9 +6917,9 @@ body {
 	margin-right: 10px;
 	line-height: 1;
 }
-.post-tags li a:hover {
+/*.post-tags li a:hover {
 	color: #22272e;
-}
+}*/
 .post-tags li:last-child {
 	border-right: none;
 	padding-right: 0;

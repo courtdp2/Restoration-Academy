@@ -140,9 +140,8 @@ body {
 	transform: translateX(0);
 	-webkti-transform: translateX(0);
 }
-/*.btn-default:hover {
-	background-color: #58616c;
-	color: #fff;*/
+.btn-default:hover {
+	color: #000;
 }
 input:focus, textarea:focus, button:focus, a:focus, select:focus {
 	outline: none;
@@ -159,10 +158,9 @@ input:focus, textarea:focus, button:focus, a:focus, select:focus {
 .btn-primary:focus {
 	background: none;
 }
-.btn.btn-basic.btn-default, .btn.btn-basic.btn-default:hover, .btn.btn-basic.btn-default:focus, .btn.btn-basic.btn-default.active {
+/*.btn.btn-basic.btn-default, .btn.btn-basic.btn-default:hover, .btn.btn-basic.btn-default:focus, .btn.btn-basic.btn-default.active {
 	/*background: none;
 	color: #22272e;*/
-}
 .parallax {
 	background-size: cover;
 }
@@ -188,12 +186,12 @@ input, textarea {
 	margin-bottom: 26px;
 }
 /*======Global Transition Effect==========*/
-input:focus, textarea:focus, .btn:focus, .zoom img, .img-thumb img, .btn, .btn:hover, #footer .admin, .header li a, #footer .social-icons a, #footer .email a, #footer h4 a:hover, .team-info h3 a, .news-info h3 a, #header *, .team-info .social-icons a:hover, .team-info .social-icons a, .org-info .service-block:hover h3 i, .org-info .service-block h3 i {
+/*input:focus, textarea:focus, .btn:focus, .zoom img, .img-thumb img, .btn, .btn:hover, #footer .admin, .header li a, #footer .social-icons a, #footer .email a, #footer h4 a:hover, .team-info h3 a, .news-info h3 a, #header *, .team-info .social-icons a:hover, .team-info .social-icons a, .org-info .service-block:hover h3 i, .org-info .service-block h3 i {
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
 	-ms-transition: all 0.2s ease-in-out;
 	-o-transition: all 0.2s ease-in-out;
-	transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;*/
 }
 .img-thumb {
 	display: block;
@@ -228,9 +226,9 @@ input:focus, textarea:focus, .btn:focus, .zoom img, .img-thumb img, .btn, .btn:h
 	animation: 0.5s ease-in-out 0s forwards 1 arrow;
 	-webkit-animation: 0.5s ease-in-out 0s forwards 1 arrow;
 }
-.btn-effect:hover i {
+/*.btn-effect:hover i {
 	animation: 0.5s ease-in-out 0s forwards 1 arrowIn;
-	-webkit-animation: 0.5s ease-in-out 0s forwards 1 arrowIn;
+	-webkit-animation: 0.5s ease-in-out 0s forwards 1 arrowIn;*/
 }
 @keyframes arrowIn {
 1% {
@@ -303,7 +301,7 @@ transform: translateX(0);
 	background: -o-linear-gradient(0deg, rgba(255, 255, 255, 0.5)50%, rgba(255, 255, 255, 0.35)100%);
 	background: -ms-linear-gradient(0deg, rgba(255, 255, 255, 0.5)50%, rgba(255, 255, 255, 0.35)100%);
 }
-.shine:hover:before {
+/*.shine:hover:before {
 	animation: 1.5s ease-in-out 0.5s forwards 10000 shine;
 	-webkit-animation-name: shine;
 	-webkit-animation-timing-function: ease-in-out;
@@ -311,7 +309,7 @@ transform: translateX(0);
 	-webkit-animation-delay: 0.5s;
 	-webkit-animation-iteration-count: 1000;
 	-webkit-animation-fill-mode: forwards;
-	-ms-animation: 0.5s ease-in-out 1.5s forwards 10000 shine;
+	-ms-animation: 0.5s ease-in-out 1.5s forwards 10000 shine;*/
 }
  @keyframes shine {
 0% {
