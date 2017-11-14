@@ -9,6 +9,11 @@ body {
   color: #5a5a5a;
 }
 
+.panel-collapse {
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
 /* .padding {
   margin-top: 3rem;
 } */
