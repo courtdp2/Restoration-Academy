@@ -14,6 +14,11 @@ body {
   padding-right: 14px;
 }
 
+.admin-title {
+  height: 1em;
+}
+
+
 /* .padding {
   margin-top: 3rem;
 } */
