@@ -919,3 +919,7 @@ padding-left:20px;
 	margin-right: -15px;
     margin-top: -25px;
 }
+#hoverImage {
+  text-align: center;
+  color: white;
+}

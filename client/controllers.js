@@ -78,6 +78,7 @@ angular.module('RA.controllers', [])
         $scope.delete = function (teacher) {
             if (confirm('Are you sure want to delete?')) {
                 teacher.$delete(function () {
+                    $scope.teachers = Teachers.query();
                     $location.replace().path('/list');
                 })
             }
