@@ -124,7 +124,7 @@ body {
 	height: 48px;
 	line-height: 48px;
 	font-size: 14px;
-	color: #fff;
+	color: #000;
 	border: 0px none;
 	border-radius: 0px;
 	text-transform: uppercase;
@@ -140,9 +140,9 @@ body {
 	transform: translateX(0);
 	-webkti-transform: translateX(0);
 }
-.btn-default:hover {
+/*.btn-default:hover {
 	background-color: #58616c;
-	color: #fff;
+	color: #fff;*/
 }
 input:focus, textarea:focus, button:focus, a:focus, select:focus {
 	outline: none;
@@ -160,8 +160,8 @@ input:focus, textarea:focus, button:focus, a:focus, select:focus {
 	background: none;
 }
 .btn.btn-basic.btn-default, .btn.btn-basic.btn-default:hover, .btn.btn-basic.btn-default:focus, .btn.btn-basic.btn-default.active {
-	background: none;
-	color: #22272e;
+	/*background: none;
+	color: #22272e;*/
 }
 .parallax {
 	background-size: cover;

@@ -5,16 +5,17 @@
 /* Padding below the footer and lighter body text */
 
 body {
-  padding-bottom: 3rem;
+  /* padding-bottom: 3rem; */
   color: #5a5a5a;
 }
 
-.padding {
-  padding-top: 3rem;
-}
+/* .padding {
+  margin-top: 3rem;
+} */
 
 .center {
-  margin-left: 15%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .righted {
@@ -80,6 +81,10 @@ body {
 
 .caps {
   font-variant: uppercase;
+}
+
+.white-font {
+  color: #fff;
 }
 /* HEADER */
 
