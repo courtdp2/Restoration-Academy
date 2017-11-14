@@ -14,13 +14,25 @@ body {
   padding-right: 14px;
 }
 
+.admin-title {
+  height: 1em;
+}
+
+
 /* .padding {
   margin-top: 3rem;
 } */
 
-.center {
-  margin-left: auto;
-  margin-right: auto;
+.footer-section {
+  height: 18em;
+  position: relative;
+}
+
+.footer-section .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .righted {
@@ -473,8 +485,7 @@ padding-left:20px;
 .caps {
   text-transform: uppercase;
 }
-=======
-=======
+
 /* GLOBAL STYLES
 -------------------------------------------------- */
 
@@ -490,10 +501,12 @@ body {
   padding-top: 3rem;
 }
 
-.center {
+.footer-center {
     margin-left: auto;
     margin-right: auto;
-    width: 8em
+    width: 100%;
+    max-width: 1200px;
+}
 
 /* FONTS */
 
@@ -561,7 +574,7 @@ body {
 }
 .logo {
 	max-width: inherit;
-
+}
 /* HOMEPAGE */
 
 /*
@@ -922,4 +935,20 @@ padding-left:20px;
 #hoverImage {
   text-align: center;
   color: white;
+}
+img#navBarLogo {
+  width: 5em;
+}
+
+.curriculum-tile:hover h2 {
+  display: block !important;
+  color: white !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%,-50%) !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  font-weight: bold !important;
+  text-transform: uppercase !important;
 }
