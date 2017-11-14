@@ -75,7 +75,7 @@ angular.module('RA.controllers', [])
             $location.path('/list/' + teachers.id + "/update");            
         }
 
-        $scope.delete = function (teachers) {
+        $scope.delete = function (teacher) {
             if (confirm('Are you sure want to delete?')) {
                 teacher.$delete(function () {
                     $location.replace().path('/list');
