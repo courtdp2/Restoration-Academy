@@ -756,11 +756,11 @@ padding-left:20px;
   transition: all 1s ease-in-out;
 }
 
-.fa{
+/*.fa{
   color: tan;
   margin-right: 10px;
   font-size:14px;
-}
+}*/
 
 @import "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css";
 
